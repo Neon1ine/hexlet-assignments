@@ -3,7 +3,9 @@ package exercise;
 // BEGIN
 class App {
     public static String[][] enlargeArrayImage(String[][] image) {
-        if (image == null) return null;
+        if (image == null) {
+            return null;
+        }
         String[][] result = new String[image.length * 2][image[0].length * 2];
         for (int i = 0; i < image.length; i++) {
             for (int j = 0; j < image[0].length; j++) {
